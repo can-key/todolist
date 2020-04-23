@@ -1,0 +1,78 @@
+.header{
+  width: 100%;height: 30px;
+  background-color: #323232;
+  display: inline-flex;
+  justify-content: center
+}
+.box{
+  width: 80%;height: 30px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center
+}
+.to{
+  width: 30%;height: 30px;
+  line-height: 30px;color: #DDDDDD
+}
+.in{
+  width: 60%;height: 20px;
+  line-height: 30px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  font-size: 10px;
+}
+.in input{
+  margin-left: 5px
+}
+.con{
+  width: 100%;background-color: #CDCDCD;
+  height: 90vh
+}
+.underway{
+  width: 100%;
+}
+.un{
+  width: 90%;height: 30px;
+  line-height: 30px;
+  display: inline-flex;
+  justify-content: space-between;
+  margin-left: 10px
+}
+.accomplish{
+  width: 100%;
+}
+.acc{
+  width: 90%;height: 30px;
+  line-height: 30px;
+  display: inline-flex;
+  justify-content: space-between;
+  margin-left: 10px
+}
+.txt{font-size: 20px;font-weight: 600}
+.list{
+  width: 90%;height: 30px;
+  background-color: #FFFFFF;
+  margin-left: 10px;margin-top: 5px;
+  border-radius: 5px;
+  display: inline-flex;
+  overflow: hidden
+}
+.strip{
+  width: 2%;height: 30px;
+  background-color: #629A9C;
+}
+.che{
+  width: 15%;height: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.item{
+  width: 62%;height: 30px;
+  background-color: aliceblue;
+  line-height: 30px
+}
+.but{
+  width: 21%;height: 30px;
+  text-align: center
+}

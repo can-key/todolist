@@ -1,0 +1,60 @@
+<!--index.wxml-->
+<view class="header">
+  <view class="box">
+    <view class="to">ToDoList</view>
+    <view class="in">
+      <input type="text" 
+        placeholder="添加ToDo" 
+        bindconfirm="input"
+        value="{{input}}"
+      ></input>
+    </view>
+  </view>
+</view>
+<view class="con">
+  <view class="underway">
+    <view class="un">
+      <text class="txt">正在进行</text>
+      <text>{{items.length}}</text>
+    </view>
+    <view class="list" wx:for="{{ items }}" wx:key="index" >
+      <view class="strip"></view>
+      
+<checkbox-group class="che"  bindchange="niming" data-checked="{{isChecked}}" data-index="{{index}}">
+      <view>
+        <checkbox bindtap="check" checked="{{isChecked}}" ></checkbox>
+      </view>
+</checkbox-group>
+      <view class="item">{{item}}</view>
+      <view class="but">
+        <button size="mini" 
+            type="default"
+            bindtap="delete"
+            data-index="{{index}}"
+        >删除</button>
+      </view>
+    </view>
+  </view>
+  <view class="accomplish">
+    <view class="acc">
+      <text class="txt">已经完成</text>
+      <text>{{list.length}}</text>
+    </view>
+    <view class="list" wx:for="{{ list }}" wx:key="index" >
+      <view class="strip"></view>
+<checkbox-group  class="che" bindchange="niming2" checked="true" data-index="{{index}}">
+      <view>
+        <checkbox bindtap="check" checked="{{isChecked2}}" ></checkbox>
+      </view>
+</checkbox-group>
+      <view class="item">{{item}}</view>
+      <view class="but">
+        <button size="mini" 
+            type="default"
+            bindtap="delete2"
+            data-index="{{index}}"
+        >删除</button>
+      </view>
+    </view>
+  </view>
+</view>
